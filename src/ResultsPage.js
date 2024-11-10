@@ -6,12 +6,16 @@ function ResultsPage() {
   const navigate = useNavigate();
   const { amountOfCoffee, totalWater, pours } = location.state;
 
-  function formatTime(seconds) {
-  	const mins = Math.floor(seconds / 60);
-  	const secs = seconds % 60;
-  	return `${mins}:${secs}`;
-  }
+  function formatTimeToMMSS(totalSeconds) {
+      const minutes = Math.floor(totalSeconds / 60);
+      const seconds = totalSeconds % 60;
 
+      // Format minutes and seconds with leading zeros if needed
+      const formattedMinutes = String(minutes).padStart(2, '0');
+      const formattedSeconds = String(seconds).padStart(2, '0');
+
+    return `${formattedMinutes}:${formattedSeconds}`;
+  }
   return (
     <div style={containerStyle}>
       <h1 style={titleStyle}>Brewing Results</h1>
@@ -34,7 +38,7 @@ function ResultsPage() {
             <tr key={index}>
               <td style={cellStyle}>{pour.description}</td>
               <td style={cellStyle}>{pour.cumulativeWater.toFixed(2)}</td>
-              <td style={cellStyle}>{formatTime(pour.cumulativeTime)}</td>
+              <td style={cellStyle}>{formatTimeToMMSS(pour.cumulativeTime)}</td>
             </tr>
           ))}
         </tbody>
