@@ -6,7 +6,7 @@ import ResultsPage from './ResultsPage';
 function App() {
 
   useEffect(() => {
-    document.title = 'Coffee Brewing Calculator';
+    document.title = 'Brew Calc';
   })
 
   return (
