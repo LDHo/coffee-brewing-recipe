@@ -13,7 +13,7 @@ This app is designed to help coffee enthusiasts and baristas perfect their pour-
   
 ## Getting Started
 
-To get a local copy of BrewPerfect up and running, follow these steps.
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
