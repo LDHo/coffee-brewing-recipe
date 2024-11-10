@@ -1,7 +1,5 @@
 # Coffee Brewing Recipe
 
-# Precision Coffee Brewing Companion for the 4:6 Method
-
 This app is designed to help coffee enthusiasts and baristas perfect their pour-over coffee technique using the renowned 4:6 brewing method. With it, you can adjust your coffee-to-water ratio, customize pour timings, and fine-tune your brews to achieve the ideal flavor profile every time.
 
 ---
